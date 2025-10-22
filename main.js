@@ -25,6 +25,11 @@ function moovBalle() {
 };
 
 function playGame() {
+    if (confirm("le jeu va commencer êtes vous prêt?")) {                                    //utilisation de l'objet window confirm
+        moovBalle()                                                                         //lance le jeu
+    } else if (confirm("quitter le jeu?")) {
+        alert("à bientôt!")
+    }
 };
 
 function gameOver() {
